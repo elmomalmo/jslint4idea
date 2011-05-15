@@ -1,0 +1,27 @@
+<idea-plugin version="2">
+    <name>JSLint for IntelliJ IDEA</name>
+    <description>Adds JSLInt annotations for JavaScript files</description>
+    <version>1.0</version>
+    <vendor>Elwyn Malethan</vendor>
+    <idea-version since-build="8000"/>
+
+    <application-components>
+        <!-- Add your application components here -->
+        <component>
+            <implementation-class>com.malethan.jslint4idea.JsLint4Intellij</implementation-class>
+        </component>
+    </application-components>
+
+    <project-components>
+        <!-- Add your project components here -->
+    </project-components>
+
+    <actions>
+        <!-- Add your actions here -->
+    </actions>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <externalAnnotator language="TEXT" implementationClass="com.malethan.jslint4idea.JsLintAnnotator"/>
+        <externalAnnotator language="JavaScript" implementationClass="com.malethan.jslint4idea.JsLintAnnotator"/>
+    </extensions>
+</idea-plugin>
