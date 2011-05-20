@@ -16,6 +16,7 @@ import java.util.List;
  */
 public class JsLintAnnotator implements ExternalAnnotator {
     private JSLint lint;
+    private String lintCfg = "-=!! NOT VALID CFG !!=-";
 
     public JsLintAnnotator() {
         this.lint = new JSLintBuilder().fromDefault();
@@ -27,7 +28,12 @@ public class JsLintAnnotator implements ExternalAnnotator {
             return;
         }
 
-        updateJsLintOptions();
+        Application application = ApplicationManager.getApplication();
+
+        JsLint4Intellij component = application.getComponent(JsLint4Intellij.class);
+        if(!component.jslintCfg.equals(this.lintCfg)) {
+            updateJsLintOptions(component.jslintCfg);
+        }
 
 
         final String text = psiFile.getText();
@@ -61,12 +67,8 @@ public class JsLintAnnotator implements ExternalAnnotator {
         return start;
     }
 
-    private void updateJsLintOptions() {
+    private void updateJsLintOptions(String jslintCfg) {
         this.lint.resetOptions();
-        Application application = ApplicationManager.getApplication();
-
-        JsLint4Intellij component = application.getComponent(JsLint4Intellij.class);
-        String jslintCfg = component.jslintCfg;
 
         List<String> options = Arrays.asList(jslintCfg.split(","));
         for (Option o : Option.values()) {
