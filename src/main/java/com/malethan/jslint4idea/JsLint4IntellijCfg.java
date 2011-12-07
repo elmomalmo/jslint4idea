@@ -2,9 +2,6 @@ package com.malethan.jslint4idea;
 
 import javax.swing.*;
 
-/**
- * @author Elwyn Malethan &lt;emalethan@specificmedia.com&gt;
- */
 public class JsLint4IntellijCfg {
     private JTextField jslintCfgField;
     private JLabel jslintCfgLabel;

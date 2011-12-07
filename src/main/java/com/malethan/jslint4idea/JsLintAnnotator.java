@@ -11,9 +11,6 @@ import com.intellij.psi.PsiFile;
 import java.util.Arrays;
 import java.util.List;
 
-/**
- * @author Elwyn Malethan &lt;emalethan@specificmedia.com&gt;
- */
 public class JsLintAnnotator implements ExternalAnnotator {
     private JSLint lint;
     @SuppressWarnings({"FieldCanBeLocal"})

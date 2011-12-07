@@ -14,9 +14,6 @@ import org.jetbrains.annotations.NotNull;
 
 import javax.swing.*;
 
-/**
- * @author Elwyn Malethan &lt;emalethan@specificmedia.com&gt;
- */
 public class JsLint4Intellij implements ApplicationComponent, Configurable, JDOMExternalizable {
     public String jslintCfg = "browser,cap,bitwise,plusplus,fragment,on,sub,indent=4";
 
