@@ -9,3 +9,8 @@ specified configuration.
 Build using Maven, then pop the JAR in IDEA's plugins folder.
 
 Works for versions up to 10.5.2
+
+## Notes
+
+Currently, this plugin uses a deprecated version of the plugin API and so is
+not compatible with version 11.
