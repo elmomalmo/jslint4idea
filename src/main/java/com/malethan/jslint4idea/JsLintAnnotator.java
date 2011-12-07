@@ -16,6 +16,7 @@ import java.util.List;
  */
 public class JsLintAnnotator implements ExternalAnnotator {
     private JSLint lint;
+    @SuppressWarnings({"FieldCanBeLocal"})
     private String lintCfg = "-=!! NOT VALID CFG !!=-";
 
     public JsLintAnnotator() {
