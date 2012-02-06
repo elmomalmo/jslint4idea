@@ -3,7 +3,7 @@
     <description>Adds JSLInt annotations for JavaScript files</description>
     <version>${project.version}</version>
     <vendor>Elwyn Malethan</vendor>
-    <idea-version since-build="8000" until-build="IC-107.764"/>
+    <idea-version since-build="8000" until-build="IC-107.777"/>
 
     <application-components>
         <!-- Add your application components here -->
