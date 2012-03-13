@@ -3,7 +3,7 @@
     <name>JSLint for IntelliJ IDEA</name>
     <description>Adds JSLInt annotations for JavaScript files</description>
     <version>${project.version}</version>
-    <vendor url="http://www.maletan.com/" email="elwyn at malethan dot com">Elwyn Malethan</vendor>
+    <vendor url="http://www.malethan.com/" email="elwyn at malethan dot com">Elwyn Malethan</vendor>
     <idea-version since-build="8000"/>
 
     <application-components>
