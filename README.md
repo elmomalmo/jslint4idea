@@ -1,5 +1,8 @@
 # JSLINT 4 IntelliJ IDEA
 
+*Note: This no longer builds successfully with Maven. You will need to create
+an IDEA Plugin module for it in IDEA. Just for the moment...*
+
 IDEA Community Edition is great. However the JavScript support is nothing more
 than syntax highlighting. This plugin does JSLint inspection according to a
 specified configuration.
